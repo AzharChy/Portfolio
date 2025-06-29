@@ -14,9 +14,14 @@ const Navbar = () => {
      <ThemeToggle></ThemeToggle>
  </div>
   <div className="flex-none">
-    <button className="btn bg-white text-black">
-      Resume
-    </button>
+   <a
+            href="https://drive.google.com/file/d/1faP5WF_glWbYu2FvZNTwlsnwO_N_UhOw/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary"
+          >
+            Resume
+          </a>
   </div>
 </div>
     );

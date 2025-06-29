@@ -2,7 +2,7 @@ import React from 'react';
 
 const Education = () => {
   return (
-    <div className="hero min-h-screen bg-base-200 px-4 py-12 -mt-12">
+    <div className="hero  bg-base-200 px-4 py-12 ">
       <div className="hero-content flex flex-col items-center text-center gap-8 bg-[#252525] rounded-lg p-10 max-w-6xl mx-auto w-full">
         <h2 className="text-4xl font-bold text-white">Education</h2>
 

@@ -1,14 +1,14 @@
 import React from 'react';
-import { FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import { FaLinkedin, FaWhatsapp, FaGithub } from 'react-icons/fa';
 import profile from '../src/assets/profile.jpg';
 
 const Profile = () => {
   return (
-    <div className="hero min-h-screen bg-base-200 px-4 sm:px-6 md:px-10">
+    <div className="hero bg-base-200 px-4 sm:px-6 md:px-10">
       <div className="hero-content flex flex-col-reverse lg:flex-row items-center gap-10 py-12 bg-[#252525] rounded-lg w-full max-w-7xl mx-auto">
         
         {/* Text Content */}
-        <div className="text-center lg:text-left w-full lg:w-1/2">
+        <div className="text-center lg:text-left w-full lg:w-1/2 p-5">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             Frontend React Developer
           </h1>
@@ -19,7 +19,7 @@ const Profile = () => {
           {/* Social Links */}
           <div className="flex justify-center lg:justify-start gap-4 text-2xl mb-6">
             <a
-              href="https://www.linkedin.com/in/your-linkedin-username"
+              href="https://www.linkedin.com/in/md-azhar-mahmud-chowdhury-aa867232a/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-blue-400 transition"
@@ -34,9 +34,25 @@ const Profile = () => {
             >
               <FaWhatsapp />
             </a>
+            <a
+              href="https://github.com/AzharChy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-gray-300 transition"
+            >
+              <FaGithub />
+            </a>
           </div>
 
-          <button className="btn btn-primary">Resume</button>
+          {/* Resume Button with Drive Link */}
+          <a
+            href="https://drive.google.com/file/d/1faP5WF_glWbYu2FvZNTwlsnwO_N_UhOw/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary"
+          >
+            Resume
+          </a>
         </div>
 
         {/* Profile Image */}

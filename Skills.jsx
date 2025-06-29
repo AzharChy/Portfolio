@@ -4,7 +4,7 @@ import { SiTailwindcss, SiMongodb, SiFirebase, SiExpress, SiJsonwebtokens, SiDai
 
 const Skills = () => {
   return (
-    <div className="hero min-h-screen bg-base-200 px-4 py-12">
+    <div className="hero  bg-base-200 px-4 py-12">
       <div className="hero-content flex-col items-center text-center gap-10 bg-[#252525] rounded-lg p-10 w-full max-w-5xl">
         <h2 className="text-4xl font-bold text-white">My Skills</h2>
 

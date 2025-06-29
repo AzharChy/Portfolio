@@ -6,6 +6,7 @@ import Skills from './Skills';
 import Education from './Components/Education';
 import Projects from './Components/Projects';
 import ContactMe from './Components/Contact';
+import Footer from './Components/Footer';
 
 const Home = () => {
     return (
@@ -22,6 +23,7 @@ const Home = () => {
             <Education></Education>
             <Projects></Projects>
             <ContactMe></ContactMe>
+            <Footer></Footer>
         </div>
     );
 };
