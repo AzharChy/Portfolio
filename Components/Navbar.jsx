@@ -1,30 +1,43 @@
 import React from 'react';
 import ThemeToggle from './Themetoggle';
-import logo from '../src/assets/llogo.svg'
+import logo from '../src/assets/llogo.svg';
 
 const Navbar = () => {
-    return (
-      <div className="navbar shadow-sm bg-[#252525] max-w-7xl m-auto">
-  <div className="flex-1">
-    <a className="btn btn-ghost text-3xl">
-        <img src={logo} alt='logo' className='w-16 h-16 bg-white'></img>
-    </a>
-  </div>
- <div className='mr-5'>
-     <ThemeToggle></ThemeToggle>
- </div>
-  <div className="flex-none">
-   <a
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  return (
+    <div className="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
+      <div className="navbar max-w-7xl mx-auto px-4">
+
+        {/* Logo */}
+        <div className="flex-1">
+          <button
+            onClick={scrollToTop}
+            className="flex items-center gap-2 text-xl font-bold text-slate-800 hover:text-indigo-600 transition"
+          >
+            <img src={logo} alt="logo" className="w-12 h-12 rounded-xl" />
+            Azhar.dev
+          </button>
+        </div>
+
+        {/* Resume & Theme */}
+        <div className="flex items-center gap-4">
+       
+
+          <a
             href="https://drive.google.com/file/d/1faP5WF_glWbYu2FvZNTwlsnwO_N_UhOw/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-primary"
+            className="bg-indigo-600 text-white px-4 py-2 rounded-xl font-semibold hover:bg-indigo-700 transition"
           >
             Resume
           </a>
-  </div>
-</div>
-    );
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Navbar;

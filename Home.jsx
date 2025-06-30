@@ -10,7 +10,7 @@ import Footer from './Components/Footer';
 
 const Home = () => {
     return (
-        <div className='bg-[#F8F7F2]'>
+        <div className='bg-[#e9f2ff]'>
             <div className='sticky top-0 z-50'>
                 <Navbar></Navbar>
               
